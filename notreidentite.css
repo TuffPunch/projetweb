@@ -1,0 +1,261 @@
+/*modification du body */
+body{
+    margin: 0;
+}
+
+/*insertion du nav bar*/
+header nav ul img{
+    float: left;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(213, 195, 174);
+  align-items: center;
+}
+
+
+header nav ul li {
+  padding: 7px 0;
+  float: right;
+}
+
+
+header nav ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: rgb(60, 58, 55);
+}
+
+/*insertion du deuxieme partie "Notre Identité"*/
+#banniere{
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(251, 242, 232);
+    
+}
+
+#slogan h1{
+    margin: 0;
+    font-size: 60px;
+    font-family: playfairdisplay-bold;
+}
+
+#slogan p{
+
+    font-size: 20px;
+    font-family: heebo-light,sans-serif ;
+}
+
+#slogan{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*insertion du parag"Le meilleur resto dans le quartier" et l'image"*/
+#contenu-1{
+    overflow: hidden;
+}
+
+#contenu-1 img{
+    position: relative;
+    float: left;
+    width: 50%;
+    object-fit: cover;
+}
+
+#contenu-1 div{
+    float: right;
+    width: 48%;
+    padding: 80px 10px;
+   
+}
+
+#contenu-1 div h1{
+    font-family: playfairdisplay-bold,'playfair display';
+    font-size: 50px;
+    text-align: center;
+}
+
+#contenu-1 div p{
+    font-family: heebo-light;
+    font-size: 16px;
+    text-align: center;
+    padding: 30px;
+    
+}
+
+#contenu-1 div span{
+    border: solid 1px rgb(96,105,93);
+    padding: 10px;
+    font-family: heebo-light;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 10%;
+    margin-top: 10%;
+}
+
+#contenu-1 div span:hover{
+background-color: rgb(96,105,93);
+cursor: pointer;
+}
+#contenu-1 div span a {
+    text-decoration: none;
+    color: black;
+}
+
+/*insertion d'une bar  "De vrais aliments. Pas d'ingrédients secrets."*/
+#contenu-2 {
+
+    width: 100%;
+    text-align: center;
+    background-color: rgb(96,105,93);
+    font-family: heebo-light;
+    font-size: 40px;
+    color: white;
+    margin: 0;
+    
+}
+
+#contenu-2 p{
+    margin: 0px;
+    padding: 40px;
+}
+
+/*insertion d'une image et parag " De nos cœurs à votre assiette"*/
+#contenu-3{
+    overflow: hidden;
+}
+
+#contenu-3 img{
+    position: relative;
+    float: right;
+    width: 50%;
+    object-fit: cover;
+}
+
+#contenu-3 div{
+    
+    float: left;
+    width: 48%;
+    padding: 80px 10px;
+
+}
+
+#contenu-3 div h1{
+    font-family: playfairdisplay-bold,'playfair display';
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+#contenu-3 div p{
+    font-family: heebo-light;
+    font-size: 16px;
+    text-align: center;
+    padding: 80px;
+}
+
+#contenu-3 div span{
+    border: solid 1px rgb(96,105,93);
+    padding: 10px;
+    font-family: heebo-light;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 10%;
+    margin-top: 10%;
+}
+#contenu-3 div span:hover{
+background-color: rgb(96,105,93);
+cursor: pointer;
+}
+
+/*insertion de la derniere bar et l'utilisation d'un tableau*/
+footer{
+    position: relative;
+    width: 100%;
+    background-color: rgb(75, 87, 72);
+    font-family: heebo-light;
+    color: white;
+    text-align: left;
+}
+footer table a {
+    text-decoration: none;
+    color: white;
+}
+footer table {
+  margin: 0 auto;
+  width: 80%;
+  text-align: left;
+}
+.c1 {
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: right;
+}
+footer table tr th {
+    font-size: 30px;
+}
+
+
+#rejoindre {
+    border: solid 1px rgb(96,105,93);
+    border-color:white;
+    font-family: heebo-light;
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    
+}
+#rejoindre:hover{
+    background-color: rgb(96,105,93);
+}
+
+td th{
+    height: 10px;
+}
+
+/*insertion le dernier contenu de la page */
+#contenu-4 
+{
+    background-color:rgb(251, 242, 232);  
+    text-align: center;
+
+}
+#contenu-4 ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#contenu-4 ul li{
+    padding: 7px 16px;
+    float: left;
+}
+
+#contenu-4 p
+{
+text-align: center;
+color: black;
+margin: 0px;
+}
+#contenu-4 ul li a 
+{
+    text-decoration: none;
+    color: black;
+}

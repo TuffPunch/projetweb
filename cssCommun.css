@@ -1,0 +1,117 @@
+/*modification du body */
+body{
+    margin: 0;
+}
+
+/*insertion du nav bar*/
+header nav ul img{
+    float: left;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(213, 195, 174);
+  align-items: center;
+}
+
+
+header nav ul li {
+  padding: 7px 0;
+  float: right;
+  line-height: 26px; 
+}
+
+
+header nav ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: rgb(60, 58, 55);
+}
+
+/*insertion de la derniere bar et l'utilisation d'un tableau*/
+footer{
+  position: relative;
+  width: 100%;
+  background-color: rgb(75, 87, 72);
+  font-family: heebo-light;
+  color: white;
+  text-align: left;
+}
+footer table a {
+  text-decoration: none;
+  color: white;
+}
+footer table {
+margin: 0 auto;
+width: 80%;
+text-align: left;
+}
+.c1 {
+  font-weight: bolder;
+  font-size: 50px;
+  text-align: right;
+}
+footer table tr th {
+  font-size: 30px;
+}
+
+
+#rejoindre {
+  border: solid 1px rgb(96,105,93);
+  border-color:white;
+  font-family: heebo-light;
+  font-size: 15px;
+  color: white;
+  background-color: transparent;
+  
+}
+#rejoindre:hover{
+  background-color: rgb(96,105,93);
+}
+
+td th{
+  height: 10px;
+}
+
+
+/*insertion le dernier contenu de la page */
+#contenu-4 
+{
+    background-color:rgb(251, 242, 232);  
+    text-align: center;
+
+}
+#contenu-4 ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#contenu-4 ul li{
+    padding: 7px 16px;
+    float: left;
+}
+
+#contenu-4 p
+{
+text-align: center;
+color: black;
+margin: 0px;
+}
+#contenu-4 ul li a 
+{
+    text-decoration: none;
+    color: black;
+}

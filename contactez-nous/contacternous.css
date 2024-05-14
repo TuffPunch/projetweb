@@ -1,0 +1,188 @@
+body
+{
+    margin: 0%;
+    background-color: rgb(249, 242, 236) ;
+    text-align: center;
+    margin-left: 0%;
+  
+}
+
+header nav ul img
+{
+    float: left;
+}
+
+header nav ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(213, 195, 174);
+  align-items: center;
+  height: 80px;
+}
+
+header nav ul li 
+{
+  padding: 7px 0;
+  float: right;
+}
+
+header nav ul li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+header nav ul li a:hover 
+{
+  color: rgb(60, 58, 55);
+}
+
+
+#banniere {
+    text-align: center;
+}
+
+
+
+
+                         /* connexion*/
+
+   #container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+    margin-bottom: 15%;
+   }
+   /* Bordered form */
+   #form {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+   }
+   #container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+   }
+   
+   /* Full-width inputs */
+   #form input[type=text],#form input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+   }
+   
+   /* Set a style for all buttons */
+   #form input[type=submit] {
+    background-color:rgb(202, 181, 146) /*rgb(213, 195, 174)*/;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+   }
+   #form input[type=submit]:hover {
+    background-color: white;
+    color: rgb(60, 58, 55);
+    border: 1px solid rgb(213, 195, 174);
+
+   }
+
+
+   /* footer*/ 
+   
+   /*insertion de la derniere bar et l'utilisation d'un tableau*/
+footer
+{
+    position: relative;
+    width: 100%;
+    background-color: rgb(75, 87, 72);
+    font-family: heebo-light;
+    color: white;
+    text-align: left;
+   
+}
+
+footer table a {
+    text-decoration: none;
+    color: white;
+}
+
+footer table {
+  margin: 0 auto;
+  width: 80%;
+  text-align: left;
+}
+
+.c1 {
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: right;
+}
+
+footer table tr th {
+    font-size: 30px;
+}
+
+
+#rejoindre {
+    border: solid 1px rgb(96,105,93);
+    border-color:white;
+    font-family: heebo-light;
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    
+}
+#rejoindre:hover{
+    background-color: rgb(96,105,93);
+}
+
+td th{
+    height: 10px;
+}
+
+/*insertion le dernier contenu de la page */
+#contenu-4 
+{
+    background-color:rgb(251, 242, 232);  
+    text-align: center;
+
+}
+#contenu-4 ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#contenu-4 ul li{
+    padding: 7px 16px;
+    float: left;
+}
+
+#contenu-4 p
+{
+text-align: center;
+color: black;
+margin: 0px;
+}
+#contenu-4 ul li a 
+{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,80 @@
+
+
+/*insertion du deuxieme partie "Menu"*/
+#banniere{
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(251, 242, 232);
+    
+}
+
+#slogan h1{
+    margin: 0;
+    font-size: 60px;
+    font-family: playfairdisplay-bold;
+}
+
+#slogan p{
+
+    font-size: 20px;
+    font-family: heebo-light,sans-serif ;
+}
+
+#slogan{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*modification du contenu*/
+.contenu-1 h2,.contenu-1 h3{
+    margin-top: 60px;
+    text-align: center;
+    font-family: serif;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+.contenu-1 hr{
+    width: 5%;
+}
+
+.contenu-1{
+    text-align: center;
+}
+
+.contenu-1 ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+/* 
+- display: flex;: Cette propriété est utilisée pour créer un conteneur flexible. 
+Un conteneur flexible est comme une boîte qui contient d'autres éléments 
+et vous permet de contrôler leur disposition.
+
+- flex-flow: row wrap;: Il s'agit d'une propriété abrégée qui combine flex-direction et flex-wrap. 
+La première partie (row) concerne la direction (ligne horizontale), et la deuxième partie (wrap) 
+signifie que si les éléments ne rentrent pas dans une ligne, 
+ils doivent passer à la ligne suivante.
+
+- justify-content: center;: Cette propriété contrôle comment les éléments sont espacés le long 
+de l'axe principal (qui est horizontal dans ce cas). En le définissant sur "center", 
+cela signifie que les éléments seront centrés horizontalement à l'intérieur du conteneur flexible.
+
+*/
+
+.contenu-1 ul li{
+    padding: 30px 20px;
+    text-wrap: wrap;
+    max-width: 300px;
+}
+.c2{
+    font-size: 20px;
+}
+
+
+
