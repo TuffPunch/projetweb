@@ -1,9 +1,10 @@
 # projetweb
-
+# DONE
+### - admin panel
+#### - CRUD Menu (sans update)
 
 # TODO
-### - admin panel
-#### - CRUD Menu
+
 #### - CRUD Order
 ### - Make Order
 #### - Cart system

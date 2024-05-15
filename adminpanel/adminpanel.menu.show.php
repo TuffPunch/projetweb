@@ -98,26 +98,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         ?>
     </div>
     <section style="display: flex; justify-content: space-between" class="contenu-1">
-        <div style="width: 50%; display: flex; flex-direction: row; justify-content: center">
+        <div style="width: 50%; display: flex; justify-content: center;">
 
-            <table id="menu-list" style="border-collapse: collapse; border: #333333 solid 2px; width: 80%">
+            <table id="menu-list" style="border-collapse: collapse; border: #333333 solid 2px; width: 80%; align-self: center;">
                 <title>Menus</title>
 
                 <thead>
                 <tr>
                     <th>Nom</th>
+                    <th>Description</th>
+                    <th>Prix</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
             </table>
         </div>
-        <div style="width: 50%; text-align: center; border: black solid 1px">
+        <div style="width: 50%; text-align: center;">
             <div id="container">
-                <form id="form" method="post" action="add_menu.php">
+                <form id="form" method="post" action="add_menuitem.php">
                     <h1>Ajouter un Menu</h1>
                     <br>
                     <label><b>Nom</b></label>
-                    <input type="text" placeholder="Entrer le nom du menu" name="name" id="username" required>
+                    <input type="text" placeholder="Entrer le nom de l'item" name="name" id="name" required>
+                    <br>
+                    <label><b>Description</b></label>
+                    <input type="text" placeholder="Entrer la description de l'item" name="description" id="description" required>
+                    <br>
+                    <label><b>Price</b></label>
+                    <input type="number" placeholder="Entrer le prix de l'item" step="0.01"  name="price" id="price" required>
+                    <br>
+                    <input type="hidden" name="menuId" id="menuId" value=<?php echo $id ?> required>
                     <br> <br>
 
                     <input type="submit" id='submit' value='Ajouter' >
@@ -135,10 +145,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     (function(){
         const data = <?php echo json_encode($menuItems); ?>;
         data.forEach(menuItem => {
+            console.log(menuItem)
             const menuElement = document.createElement("tr");
+
             const menuElementName = document.createElement('td');
+            menuElementName.style.textAlign = "center";
             menuElementName.innerHTML = menuItem.name;
             menuElement.appendChild(menuElementName);
+
+            const menuElementDesc = document.createElement('td');
+            menuElementDesc.style.textAlign = "center";
+            menuElementDesc.innerHTML = menuItem.description;
+            menuElement.appendChild(menuElementDesc);
+
+            const menuElementPrice = document.createElement('td');
+            menuElementPrice.style.textAlign = "center";
+            menuElementPrice.innerHTML = menuItem.price;
+            menuElement.appendChild(menuElementPrice);
+
             const menuElementActionsTd = document.createElement("td");
             const menuElementActions = document.createElement("div");
             menuElementActions.style.display = 'flex';
@@ -151,15 +175,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             menuElementDeleteAction.style.color = "black";
             menuElementDeleteAction.style.textDecoration = "none";
             menuElementActions.appendChild(menuElementDeleteAction);
-
-            const menuElementShowAction = document.createElement("a");
-            menuElementShowAction.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" id="mainIconPathAttribute"></path> <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" id="mainIconPathAttribute"></path> </svg>
-            Voir`
-            menuElementShowAction.setAttribute("href", `adminpanel.menu.show.php?id=${menuItem.itemId}&menuId=${menuId}`)
-            menuElementShowAction.style.color = "black";
-            menuElementShowAction.style.textDecoration = "none";
-            menuElementActions.appendChild(menuElementShowAction);
-
 
             menuElementActionsTd.appendChild(menuElementActions);
             menuElement.appendChild(menuElementActionsTd);

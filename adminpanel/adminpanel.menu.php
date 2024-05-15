@@ -40,7 +40,7 @@ if (!(isset($_SESSION['user_logged_in']) && $_SESSION['user_logged_in'] === true
     <section style="display: flex; justify-content: space-between" class="contenu-1">
         <div style="width: 50%; display: flex; flex-direction: row; justify-content: center">
 
-            <table id="menu-list" style="border-collapse: collapse; border: #333333 solid 2px; width: 80%">
+            <table id="menu-list" style="border-collapse: collapse; border: #333333 solid 2px; width: 80%; align-self: center">
                 <title>Menus</title>
 
                 <thead>
@@ -51,7 +51,7 @@ if (!(isset($_SESSION['user_logged_in']) && $_SESSION['user_logged_in'] === true
                 </thead>
             </table>
         </div>
-        <div style="width: 50%; text-align: center; border: black solid 1px">
+        <div style="width: 50%; text-align: center;">
             <div id="container">
                 <form id="form" method="post" action="add_menu.php">
                     <h1>Ajouter un Menu</h1>

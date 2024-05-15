@@ -7,7 +7,9 @@ fetch('../menu/menus.php')
     .then(data => {
         data.forEach(menu => {
             const menuElement = document.createElement("tr");
+            menuElement.style.height = 0;
             const menuElementName = document.createElement('td');
+            menuElementName.style.textAlign = "center";
             menuElementName.innerHTML = menu.name;
             menuElement.appendChild(menuElementName);
             const menuElementActionsTd = document.createElement("td");
