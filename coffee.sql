@@ -21,6 +21,9 @@ SET time_zone = "+00:00";
 -- Database: `coffee`
 --
 
+CREATE DATABASE coffee;
+USE coffee;
+
 -- --------------------------------------------------------
 
 --

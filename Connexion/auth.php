@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           $_SESSION['user_logged_in'] = true;
           $_SESSION['username'] = $username;
           // Redirect to hello page
-          header("Location: /projetweb/menu/menu.php");  
+          header("Location: /projetweb/adminpanel/adminpanel.php");
         } else {
           $errorMessage = "Invalid username or password.";
           $_SESSION['login_failed'] = true;

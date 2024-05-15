@@ -16,7 +16,7 @@
                     <img src="../logo.png" width="70" />
                     <?php if (isset($_SESSION['user_logged_in']) && $_SESSION['user_logged_in'] === true): ?>
                         <li id="admin"><a href="../Connexion/logout.php">Logout</a></li>
-                        <li id="admin"><a href="../Connexion/connexion.php">Admin Panel</a></li>
+                        <li id="admin"><a href="../adminpanel/adminpanel.php">Admin Panel</a></li>
                     <?php else: ?>
                     <li id="connexion"><a href="../Connexion/connexion.php"><img style="vertical-align: middle;" src="../login-icon.png" width="26px"/> Connexion</a></li>
 
