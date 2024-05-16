@@ -58,7 +58,7 @@
                 <?php endif; ?>
                     
                     <li><a href="../contactez-nous/contacternous.php">Nous Contactez</a></li>
-                    <li><a href="../commanderenligne/Commanderenligne.php">Commander En Ligne</a></li>
+
                     <li><a href="./menu.php">Menu</a></li>
                     <li><a href="../notre_identite/notreidentité.php">Notre Identité</a></li>
                     <li><a href="../acceuil/acceuil.php">Accueil</a></li>

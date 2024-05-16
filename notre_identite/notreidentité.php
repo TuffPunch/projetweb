@@ -20,7 +20,7 @@
                     <li id="connexion"><a href="../Connexion/connexion.php"><img style="vertical-align: middle;" src="../login-icon.png" width="26px"/> Connexion</a></li>
 
                 <?php endif; ?><li><a href="../contactez-nous/contacternous.php">Nous Contactez</a></li>
-                <li><a href="../commanderenligne/Commanderenligne.php">Commander En Ligne</a></li>
+
                 <li><a href="../menu/menu.php">Menu</a></li>
                 <li><a href="./notreidentité.php">Notre Identité</a></li>
                 <li><a href="../acceuil/acceuil.php">Accueil</a></li>
