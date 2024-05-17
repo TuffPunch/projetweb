@@ -43,7 +43,6 @@
                 <table id="tabhaut2">
                     <tr><td colspan="2"> </td></tr>
                     <tr>
-                       <td><span><a href="../commanderenligne/Commanderenligne.php" style="text-decoration: none;color: white;"> Commander</a> </span></td> 
                        <td><span><a href="../menu/menu.php"> Notre Menu </a> </span></td> 
                     </tr>
                 </table>
